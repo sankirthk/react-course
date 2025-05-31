@@ -50,13 +50,9 @@ body {
   
 }
 
-.book_authors {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
 .book_author-name {
+  display: inline-block;
   color: gray;
   text-decoration: none;
+  margin-right: 0.5rem;
 }

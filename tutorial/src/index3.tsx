@@ -52,9 +52,8 @@ const secondAuthor: authorObj = {
 const thirdAuthor: authorObj = {
   id: 3,
   authorName: "Dr. Suess",
-  authorLink:
-    "https://www.amazon.com/Dr-Seuss/e/B000AP8MY6?ref=bsf_qv_ov_prnt_ap_rw",
-};
+  authorLink: "https://www.amazon.com/Dr-Seuss/e/B000AP8MY6?ref=bsf_qv_ov_prnt_ap_rw"
+}
 
 let books: bookObj[] = [
   {
@@ -88,18 +87,8 @@ const Booklist = () => {
 
 const Book = (props: bookObj) => {
   const { imgSrc, title, authors } = props;
-
-  const clickHandler = (e: React.MouseEvent<HTMLButtonElement>) => {
-    console.log(e);
-    alert("Hello World");
-  };
-
-  const complexHandler = (author: authorObj[]) => {
-    console.log(author);
-  };
-
   return (
-    <article className="book" onMouseOver={() => console.log(title)}>
+    <article className="book">
       <div className="book_info-image">
         <img className="book-image" src={imgSrc} alt="" />
       </div>
@@ -119,10 +108,6 @@ const Book = (props: bookObj) => {
           ))}
         </div>
       </div>
-      <button onClick={clickHandler}>click handler button</button>
-      <button onClick={() => complexHandler(authors)}>
-        complex click handler
-      </button>
     </article>
   );
 };
