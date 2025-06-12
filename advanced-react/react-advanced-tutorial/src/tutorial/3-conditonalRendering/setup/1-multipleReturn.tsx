@@ -36,6 +36,7 @@ const MultipleReturns: React.FC = () => {
   if (isError) {
     return <h1>Error...</h1>;
   }
+  
   return (
     <div>
       <h1>{user}</h1>

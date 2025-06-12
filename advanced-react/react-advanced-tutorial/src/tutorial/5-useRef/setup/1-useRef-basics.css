@@ -1,0 +1,28 @@
+.form {
+    margin: 0;
+  background-color: rgb(62, 0, 78);
+  background-image: radial-gradient(
+      circle at 50% 250%,
+      rgb(105, 4, 109),
+      rgb(55, 2, 62)
+    ),
+    linear-gradient(rgb(55, 2, 62), rgb(105, 4, 109));
+  background-origin: padding-box, border-box;
+  background-clip: padding-box, border-box;
+  border: transparent 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+}
+
+label {
+    color: white;
+    margin-right: 0.5rem;
+}
+
+.butn {
+    background-color: rgb(255, 255, 255);
+    color: rgb(62, 0, 72);
+    
+}
