@@ -5,7 +5,7 @@ import Modal from "./modal";
 const UseReducerBasics: React.FC = () => {
   const [name, setName] = useState("");
   const [showModal, setShowModal] = useState(false);
-  const [people, setPeople] = useState<dataObj>(data);
+  const [people, setPeople] = useState<dataObj[]>(data);
 
   const handleSumbit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -21,7 +21,7 @@ const UseReducerBasics: React.FC = () => {
 
   return (
     <>
-      {showModal && <Modal />}
+      {showModal && <Modal closeModal={()=>{}}modalContent="" />}
       <form onSubmit={handleSumbit}>
         <label htmlFor="name">Name</label>
         <input

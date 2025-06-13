@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-const Modal: React.FC = () => {
+interface ModalProps {
+  modalContent: string;
+  closeModal: () => void;
+}
+
+const Modal: React.FC<ModalProps> = ({ modalContent, closeModal }) => {
+  useEffect(() => {
+    setTimeout(() => {
+      closeModal();
+    }, 2000);
+  });
   return (
     <>
-      <h1>This is a modal</h1>
+      <p>{modalContent}</p>
     </>
   );
 };
